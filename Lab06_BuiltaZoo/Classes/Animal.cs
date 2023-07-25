@@ -8,7 +8,7 @@ namespace Lab06_BuiltaZoo.Classes
 {
     public abstract class Animal
     {
-        protected string name;
+        protected internal string name;
 
         public Animal(string name)
         {

@@ -8,7 +8,7 @@ namespace Lab06_BuiltaZoo.Classes
 {
     public abstract class Bird : Animal
     {
-        protected bool canFly;
+        protected internal bool canFly;
 
         public Bird(string name, bool canFly) : base(name)
         {

@@ -34,5 +34,10 @@ namespace Lab06_BuiltaZoo.Classes
         {
             Console.WriteLine($"{name} is cold-blooded.");
         }
+
+        public override string Habitat
+        {
+            get { return "Grass"; }
+        }
     }
 }

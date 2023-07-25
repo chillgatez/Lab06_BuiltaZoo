@@ -18,6 +18,9 @@ namespace Lab06_BuiltaZoo.Classes
         public abstract void Eat();
         public abstract void Sleep();
         public abstract string Sound();
-
+        public virtual string Habitat
+        {
+            get { return "Unknown"; }
+        }
     }
 }

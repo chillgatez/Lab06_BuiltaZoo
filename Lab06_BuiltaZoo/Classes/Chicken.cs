@@ -31,5 +31,10 @@ namespace Lab06_BuiltaZoo.Classes
         {
             return true;
         }
+
+        public override string Habitat
+        {
+            get { return "Farm"; }
+        }
     }
 }

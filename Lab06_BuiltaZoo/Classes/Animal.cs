@@ -10,13 +10,13 @@ namespace Lab06_BuiltaZoo.Classes
     {
         protected internal string name;
         protected internal int numberOfLegs;
-        protected internal string family;
+        protected internal string Family;
 
-        public Animal(string name, int numberOfLegs, string family)
+        public Animal(string name, int numberOfLegs, string Family)
         {
             this.name = name;
             this.numberOfLegs = numberOfLegs;
-            this.family = family;
+            this.Family = Family;
         }
 
         public abstract void Eat();
@@ -34,5 +34,11 @@ namespace Lab06_BuiltaZoo.Classes
         {
             Console.WriteLine($"{name} is cold-blooded.");
         }
+
+        public virtual string Habitat { get; set; }
+
+        public virtual bool CanSwim { get; set; }
+
+        public abstract bool IsNocturnal { get; set; }
     }
 }

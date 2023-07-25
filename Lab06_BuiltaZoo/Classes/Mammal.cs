@@ -8,11 +8,11 @@ namespace Lab06_BuiltaZoo.Classes
 {
     public abstract class Mammal : Animal
     {
-        protected internal string furColor;
+        protected internal string FurColor;
 
-        public Mammal(string name, int numberOfLegs, string family, string furColor) : base(name, numberOfLegs, family)
+        public Mammal(string name, int numberOfLegs, string Family, string FurColor) : base(name, numberOfLegs, Family)
         {
-            this.furColor = furColor;
+            this.FurColor = FurColor;
         }
 
         // Override the WarmBlooded() method for mammals

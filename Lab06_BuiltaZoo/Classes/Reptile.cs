@@ -10,7 +10,7 @@ namespace Lab06_BuiltaZoo.Classes
     {
         protected internal bool HasScales { get; set; }
 
-        public Reptile(string name, int numberOfLegs, string family, bool hasScales) : base(name, numberOfLegs, family)
+        public Reptile(string name, int numberOfLegs, string Family, bool hasScales) : base(name, numberOfLegs, Family)
         {
             HasScales = hasScales;
         }

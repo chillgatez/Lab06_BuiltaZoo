@@ -10,7 +10,7 @@ namespace Lab06_BuiltaZoo.Classes
     {
         protected internal bool canFly { get; set; }
 
-        public Bird(string name, string family, bool canFly) : base(name, 2, family)
+        public Bird(string name, string Family, bool canFly) : base(name, 2, Family)
         {
             this.canFly = canFly;
         }

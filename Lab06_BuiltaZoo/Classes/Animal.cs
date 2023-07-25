@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab06_BuiltaZoo.Classes
 {
-    public class Animal
+    public abstract class Animal
     {
         protected string name;
 

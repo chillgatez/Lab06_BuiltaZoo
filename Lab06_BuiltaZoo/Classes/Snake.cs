@@ -8,7 +8,7 @@ namespace Lab06_BuiltaZoo.Classes
 {
     public class Snake : Reptile
     {
-        private bool venomous;
+        protected internal bool venomous;
 
         public Snake(string name, int numberOfLegs, bool venomous) : base(name, numberOfLegs)
         {

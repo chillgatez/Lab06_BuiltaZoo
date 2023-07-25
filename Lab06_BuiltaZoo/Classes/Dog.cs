@@ -6,13 +6,10 @@ using System.Threading.Tasks;
 
 namespace Lab06_BuiltaZoo.Classes
 {
-    public class Cat : Mammal
+    public class Dog : Mammal
     {
-        protected internal string furColor;
-
-        public Cat(string name, int numLegs, string furColor) : base(name, numLegs)
+        public Dog(string name, int numberOfLegs) : base(name, numberOfLegs)
         {
-            this.furColor = furColor;
         }
 
         public override void Eat()
@@ -27,7 +24,7 @@ namespace Lab06_BuiltaZoo.Classes
 
         public override string Sound()
         {
-            return "Meow";
+            return "Woof";
         }
 
         public override void WarmBlooded()

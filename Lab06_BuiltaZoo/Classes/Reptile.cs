@@ -8,7 +8,7 @@ namespace Lab06_BuiltaZoo.Classes
 {
     public abstract class Reptile : Animal
     {
-        protected int numberOfLegs;
+        protected internal int numberOfLegs;
 
         public Reptile(string name, int numberOfLegs) : base(name)
         {

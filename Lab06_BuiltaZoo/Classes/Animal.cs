@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab06_BuiltaZoo.Classes
 {
-    internal class Animal
+    public class Animal
     {
         protected string name;
 
@@ -19,16 +19,5 @@ namespace Lab06_BuiltaZoo.Classes
         public abstract void Sleep();
         public abstract string Sound();
 
-        public abstract class Mammal : Animal
-        {
-            protected int numberOfLegs;
-
-            public Mammal(string name, int numberOfLegs) : base(name)
-            {
-                this.numberOfLegs = numberOfLegs;
-            }
-
-            public abstract void WarmBlooded();
-        }
     }
 }

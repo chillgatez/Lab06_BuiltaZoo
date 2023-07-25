@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace Lab06_BuiltaZoo.Classes
 {
-    internal class Reptile
+    public abstract class Reptile : Animal
     {
+        protected int numberOfLegs;
+
+        public Reptile(string name, int numberOfLegs) : base(name)
+        {
+            this.numberOfLegs = numberOfLegs;
+        }
+
+        public abstract void ColdBlooded();
     }
 }

@@ -8,7 +8,7 @@ namespace Lab06_BuiltaZoo.Classes
 {
     public class Chicken : Bird
     {
-        public Chicken(string name, bool canFly) : base(name, canFly)
+        public Chicken(string name, bool canFly, string species) : base(name, canFly, species)
         {
         }
 

@@ -8,7 +8,7 @@ namespace Lab06_BuiltaZoo.Classes
 {
     public class Dog : Mammal
     {
-        public Dog(string name, int numberOfLegs) : base(name, numberOfLegs)
+        public Dog(string name, int numberOfLegs, string species) : base(name, numberOfLegs)
         {
         }
 

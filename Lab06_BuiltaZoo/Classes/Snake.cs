@@ -10,7 +10,7 @@ namespace Lab06_BuiltaZoo.Classes
     {
         protected internal bool venomous;
 
-        public Snake(string name, int numberOfLegs, bool venomous) : base(name, numberOfLegs)
+        public Snake(string name, int numberOfLegs, string family) : base(name, numberOfLegs, family)
         {
             this.venomous = venomous;
         }

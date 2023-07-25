@@ -8,13 +8,19 @@ namespace Lab06_BuiltaZoo.Classes
 {
     public abstract class Reptile : Animal
     {
-        protected internal int numberOfLegs;
+        protected internal bool HasScales { get; set; }
 
-        public Reptile(string name, int numberOfLegs) : base(name)
+        public Reptile(string name, int numberOfLegs, string family, bool hasScales) : base(name, numberOfLegs, family)
         {
-            this.numberOfLegs = numberOfLegs;
+            HasScales = hasScales;
         }
 
-        public abstract void ColdBlooded();
+        // Override the ColdBlooded() method for reptiles
+        public override void ColdBlooded()
+        {
+            Console.WriteLine($"{name} is cold-blooded.");
+        }
+
+        public abstract bool LaysEggs();
     }
 }

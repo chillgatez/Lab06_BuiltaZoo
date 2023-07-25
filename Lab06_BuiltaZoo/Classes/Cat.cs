@@ -10,7 +10,7 @@ namespace Lab06_BuiltaZoo.Classes
     {
         protected internal string furColor;
 
-        public Cat(string name, int numLegs, string furColor) : base(name, numLegs)
+        public Cat(string name, int numberOfLegs, string family) : base(name, numberOfLegs, species)
         {
             this.furColor = furColor;
         }

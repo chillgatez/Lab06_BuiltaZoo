@@ -8,11 +8,10 @@ namespace Lab06_BuiltaZoo.Classes
 {
     public class Cat : Mammal
     {
-        protected internal string furColor;
-
-        public Cat(string name, int numberOfLegs, string family) : base(name, numberOfLegs, species)
+        public Cat(string name, string FurColor) : base(name, 4, "Felidae", FurColor)
         {
-            this.furColor = furColor;
+            CanSwim = true;
+            Habitat = "Domestic";
         }
 
         public override void Eat()
@@ -35,9 +34,6 @@ namespace Lab06_BuiltaZoo.Classes
             Console.WriteLine($"{name} is warm-blooded.");
         }
 
-        public override string Habitat
-        {
-            get { return "Domestic"; }
-        }
+        public override bool IsNocturnal { get; set; } = true;
     }
 }

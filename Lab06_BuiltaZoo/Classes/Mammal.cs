@@ -8,8 +8,10 @@ namespace Lab06_BuiltaZoo.Classes
 {
     public abstract class Mammal : Animal
     {
+        // Additional property specific to mammals
         protected internal string FurColor;
 
+        // Constructor to initialize mammal properties
         public Mammal(string name, int numberOfLegs, string Family, string FurColor) : base(name, numberOfLegs, Family)
         {
             this.FurColor = FurColor;

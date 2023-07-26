@@ -8,8 +8,10 @@ namespace Lab06_BuiltaZoo.Classes
 {
     public class Chicken : Bird
     {
-        public Chicken(string name, bool canFly, string species) : base(name, canFly, species)
+        public Chicken(string name, bool canFly) : base(name, "Phasianidae", canFly)
         {
+            CanSwim = true;
+            Habitat = "Farm";
         }
 
         public override void Eat()
@@ -32,9 +34,6 @@ namespace Lab06_BuiltaZoo.Classes
             return true;
         }
 
-        public override string Habitat
-        {
-            get { return "Farm"; }
-        }
+        public override bool IsNocturnal { get; set; } = false;
     }
 }

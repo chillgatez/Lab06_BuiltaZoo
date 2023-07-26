@@ -8,11 +8,10 @@ namespace Lab06_BuiltaZoo.Classes
 {
     public class Snake : Reptile
     {
-        protected internal bool venomous;
-
-        public Snake(string name, int numberOfLegs, string family) : base(name, numberOfLegs, family)
+        public Snake(string name, bool hasScales) : base(name, 0, "Serpentes", hasScales)
         {
-            this.venomous = venomous;
+            CanSwim = true;
+            Habitat = "Swamp";
         }
 
         public override void Eat()
@@ -30,14 +29,11 @@ namespace Lab06_BuiltaZoo.Classes
             return "Hiss";
         }
 
-        public override void ColdBlooded()
+        public override bool LaysEggs()
         {
-            Console.WriteLine($"{name} is cold-blooded.");
+            return true;
         }
 
-        public override string Habitat
-        {
-            get { return "Grass"; }
-        }
+        public override bool IsNocturnal { get; set; } = true;
     }
 }

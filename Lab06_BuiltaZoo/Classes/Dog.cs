@@ -8,8 +8,10 @@ namespace Lab06_BuiltaZoo.Classes
 {
     public class Dog : Mammal
     {
-        public Dog(string name, int numberOfLegs, string species) : base(name, numberOfLegs)
+        public Dog(string name, string FurColor) : base(name, 4, "Canidae", FurColor)
         {
+            CanSwim = true;
+            Habitat = "Domestic";
         }
 
         public override void Eat()
@@ -32,9 +34,6 @@ namespace Lab06_BuiltaZoo.Classes
             Console.WriteLine($"{name} is warm-blooded.");
         }
 
-        public override string Habitat
-        {
-            get { return "Domestic"; }
-        }
+        public override bool IsNocturnal { get; set; } = false;
     }
 }

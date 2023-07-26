@@ -16,7 +16,7 @@ namespace Lab06_BuiltaZoo.Classes
 
         public override void Eat()
         {
-            Console.WriteLine($"{name} is pecking at food.");
+            Console.WriteLine($"{name} is pecking at seeds.");
         }
 
         public override void Sleep()

@@ -16,12 +16,12 @@ namespace Lab06_BuiltaZoo.Classes
 
         public override void Eat()
         {
-            Console.WriteLine($"{name} is eating.");
+            Console.WriteLine($"{name} is eating breadcrumbs on cheat day.");
         }
 
         public override void Sleep()
         {
-            Console.WriteLine($"{name} is sleeping.");
+            Console.WriteLine($"{name} stands on one leg to sleep.");
         }
 
         public override string Sound()
@@ -33,6 +33,7 @@ namespace Lab06_BuiltaZoo.Classes
         {
             return true;
         }
+
         public override bool IsNocturnal { get; set; } = false;
     }
 }

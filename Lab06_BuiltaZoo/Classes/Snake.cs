@@ -16,12 +16,12 @@ namespace Lab06_BuiltaZoo.Classes
 
         public override void Eat()
         {
-            Console.WriteLine($"{name} is eating.");
+            Console.WriteLine($"{name} has swallowed a mouse.");
         }
 
         public override void Sleep()
         {
-            Console.WriteLine($"{name} is sleeping.");
+            Console.WriteLine($"{name} is not sleeping when you are.");
         }
 
         public override string Sound()

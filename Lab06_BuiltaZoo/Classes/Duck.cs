@@ -10,7 +10,6 @@ namespace Lab06_BuiltaZoo.Classes
     {
         public Duck(string name, bool canFly) : base(name, "Anatidae", canFly)
         {
-            CanSwim = true;
             Habitat = "Wetlands";
         }
 

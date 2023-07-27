@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace Lab06_BuiltaZoo.Classes
 {
-    public class Snake : Reptile
+    public class Snake : Reptile, ISwimming
     {
         public Snake(string name, bool hasScales) : base(name, 0, "Serpentes", hasScales)
         {
-            CanSwim = true;
             Habitat = "Swamp";
         }
 
@@ -29,11 +28,14 @@ namespace Lab06_BuiltaZoo.Classes
             return "Hiss";
         }
 
-        public override bool LaysEggs()
+        public void Swim()
         {
-            return true;
+            Console.WriteLine($"{name} winds through the water.");
         }
 
-        public override bool IsNocturnal { get; set; } = true;
+        public void LayingEggs()
+        {
+            Console.WriteLine($"Lay a clutch of 2-40 eggs depending on the species.");
+        }
     }
 }

@@ -21,6 +21,5 @@ namespace Lab06_BuiltaZoo.Classes
             Console.WriteLine($"{name} is warm-blooded.");
         }
 
-        public abstract bool LaysEggs();
     }
 }

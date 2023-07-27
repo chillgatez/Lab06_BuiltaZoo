@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace Lab06_BuiltaZoo.Classes
 {
-    public class Chicken : Bird
+    public class Chicken : Bird, ILayEggs
     {
         public Chicken(string name, bool canFly) : base(name, "Phasianidae", canFly)
         {
-            CanSwim = true;
             Habitat = "Farm";
         }
 
@@ -29,11 +28,10 @@ namespace Lab06_BuiltaZoo.Classes
             return "Cluck";
         }
 
-        public override bool LaysEggs()
+        public void LayingEggs()
         {
-            return true;
+            Console.WriteLine($"Lay one egg at a time");
         }
 
-        public override bool IsNocturnal { get; set; } = false;
     }
 }

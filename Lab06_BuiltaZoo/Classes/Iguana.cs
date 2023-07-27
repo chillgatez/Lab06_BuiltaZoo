@@ -10,7 +10,6 @@ namespace Lab06_BuiltaZoo.Classes
     {
         public Iguana(string name, bool hasScales) : base(name, 4, "Iguanidae", hasScales)
         {
-            CanSwim = false;
             Habitat = "Tropical forest";
         }
 
@@ -29,10 +28,9 @@ namespace Lab06_BuiltaZoo.Classes
             return "Wheeze";
         }
 
-        public override bool LaysEggs()
+        public void LayingEggs()
         {
-            return true;
+            Console.WriteLine($"Lay a clutch of 20-40 eggs at a time.");
         }
-        public override bool IsNocturnal { get; set; } = true;
     }
 }

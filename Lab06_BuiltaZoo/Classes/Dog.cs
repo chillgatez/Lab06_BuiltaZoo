@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace Lab06_BuiltaZoo.Classes
 {
-    public class Dog : Mammal
+    public class Dog : Mammal, ISwimming
     {
         public Dog(string name, string FurColor) : base(name, 4, "Canidae", FurColor)
         {
-            CanSwim = true;
             Habitat = "Domestic";
         }
 
@@ -33,7 +32,9 @@ namespace Lab06_BuiltaZoo.Classes
         {
             Console.WriteLine($"{name} is warm-blooded.");
         }
-
-        public override bool IsNocturnal { get; set; } = false;
+        public void Swim()
+        {
+            Console.WriteLine($"{name} doggie paddles through the water.");
+        }
     }
 }

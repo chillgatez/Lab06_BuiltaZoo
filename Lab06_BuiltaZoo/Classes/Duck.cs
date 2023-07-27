@@ -28,16 +28,15 @@ namespace Lab06_BuiltaZoo.Classes
             return "Quack";
         }
 
-        public override bool LaysEggs()
-        {
-            return true;
-        }
-
         public void Swim()
         {
-            Console.WriteLine($"{name} is swimming gracefully.");
+            Console.WriteLine($"{name} swims gracefully.");
         }
 
-        public override bool IsNocturnal { get; set; } = false;
+        public void LayingEggs()
+        {
+            Console.WriteLine($"Lay a clutch of 6-12 eggs at a time.");
+        }
+
     }
 }

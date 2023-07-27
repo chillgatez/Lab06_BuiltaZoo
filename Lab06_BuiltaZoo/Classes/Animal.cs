@@ -39,8 +39,5 @@ namespace Lab06_BuiltaZoo.Classes
 
         // Virtual properties to be overridden by derived classes
         public virtual string Habitat { get; set; }
-
-        // Abstract property to be implemented by derived classes
-        public abstract bool IsNocturnal { get; set; }
     }
 }

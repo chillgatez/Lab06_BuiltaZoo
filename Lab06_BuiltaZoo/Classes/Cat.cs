@@ -10,7 +10,6 @@ namespace Lab06_BuiltaZoo.Classes
     {
         public Cat(string name, string FurColor) : base(name, 4, "Felidae", FurColor)
         {
-            CanSwim = true;
             Habitat = "Domestic";
         }
 
@@ -34,6 +33,5 @@ namespace Lab06_BuiltaZoo.Classes
             Console.WriteLine($"{name} is warm-blooded.");
         }
 
-        public override bool IsNocturnal { get; set; } = true;
     }
 }

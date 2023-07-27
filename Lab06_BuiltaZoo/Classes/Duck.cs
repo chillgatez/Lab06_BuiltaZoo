@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab06_BuiltaZoo.Classes
 {
-    public class Duck : Bird
+    public class Duck : Bird, ISwimming
     {
         public Duck(string name, bool canFly) : base(name, "Anatidae", canFly)
         {
@@ -32,6 +32,11 @@ namespace Lab06_BuiltaZoo.Classes
         public override bool LaysEggs()
         {
             return true;
+        }
+
+        public void Swim()
+        {
+            Console.WriteLine($"{name} is swimming gracefully.");
         }
 
         public override bool IsNocturnal { get; set; } = false;

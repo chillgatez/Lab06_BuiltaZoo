@@ -51,6 +51,7 @@ namespace Lab06_BuiltaZoo
             duck.Eat();
             duck.Sleep();
             duck.WarmBlooded();
+            duck.Swim();
             Console.WriteLine($"Duck sound: {duck.Sound()}");
             Console.WriteLine($"Duck can fly: {duck.canFly}");
             Console.WriteLine($"Duck family: {duck.Family}");
